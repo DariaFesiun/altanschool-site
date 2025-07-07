@@ -4,7 +4,7 @@
 
 ## 🔗 Демо
 
-[https://altanschool-site.vercel.app](https://altanschool-site.vercel.app)
+[https://altanschool-site.vercel.app](https://altanschool-site-jmvk3bvlb-darias-projects-a91a12df.vercel.app)
 
 ## 📁 Структура проекту
 
