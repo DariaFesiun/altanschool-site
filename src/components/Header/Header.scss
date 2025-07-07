@@ -1,0 +1,114 @@
+@import '../../styles/base/variables';
+
+.header {
+  padding: 29px 32px;
+	background-color: #FAF9F8;
+
+
+	@media (min-width: $breakpoint-tablet) {
+      padding: 46px 61px;
+    }
+
+		@media (min-width: $breakpoint-desktop) {
+			padding: 73px 144px;
+		}
+
+		@media (min-width: $breakpoint-large) {
+			padding: 84px 204px;
+		}
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 20px;
+    }
+
+		@media (min-width: $breakpoint-large) {
+			font-size: 36px;
+		}
+  }
+
+  &__nav {
+		background-color: #FAF9F8;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    padding: 24px;
+		font-size: 16px;
+    text-align: center;
+    z-index: 100;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #8E9A82;
+      }
+    }
+
+    &--open {
+      display: flex;
+			background-color: #FAF9F8;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      gap: 47px;
+      padding: 0;
+    }
+
+		@media (min-width: $breakpoint-desktop) {
+			gap: 74px;
+		}
+
+		@media (min-width: $breakpoint-large) {
+			gap: 95px;
+			font-size: 32px;
+		}
+  }
+
+	&__menu-toggle {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &__burger-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__close {
+    font-size: 32px;
+    color: #8E9A82;
+    font-weight: 700;
+    line-height: 1;
+  }
+}

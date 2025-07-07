@@ -1,0 +1,74 @@
+@import '../../styles/base/variables';
+
+.categories {
+  text-align: center;
+
+  &__title {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+		margin-top: 20px;
+    margin-bottom: 25px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 32px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+		aspect-ratio: 1 / 1;
+		cursor: pointer;
+    transition: transform 0.3s ease;
+
+		&:hover {
+      transform: scale(1.05);
+    }
+
+		@media (min-width: $breakpoint-tablet) {
+			width: 100%;
+			height: 100%;
+		}
+
+		@media (min-width: $breakpoint-desktop) {
+			width: 100%;
+			height: 100%;
+		}
+  }
+
+  &__background {
+    margin-top: 10px;
+    height: 89px;
+    background-image: url('../../img/categories/rectangle.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $breakpoint-tablet) {
+      height: 184px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      height: 262px;
+    }
+
+		@media (min-width: $breakpoint-large) {
+      height: 355px;
+    }
+  }
+}

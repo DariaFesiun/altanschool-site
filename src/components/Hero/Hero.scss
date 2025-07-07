@@ -1,0 +1,132 @@
+@import '../../styles/base/variables';
+
+.hero {
+  background-color: #FAF9F8;
+  padding: 24px 16px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+		letter-spacing: 0.15rem;
+
+    &--mobile {
+      display: block;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: block;
+        text-align: left;
+        font-size: 48px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+		align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+		padding-left: 32px;
+
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      gap: 40px;
+			padding-left: 50px; 
+			padding-right: 85px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding: 50px 120px 80px;
+    }
+  }
+
+  &__text-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+		
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 70%;
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+		
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    background-color: #8E9A82;
+    color: white;
+    border-radius: 59px;
+    padding: 12px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+
+    &:hover {
+      background-color: #333;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      width: auto;
+      align-self: flex-start;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 16px;
+			
+    }
+  }
+
+  &__image-wrapper {
+    width: 50%;
+    position: relative;
+    right: -24px;
+		overflow: visible;
+    height: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+      order: -1;
+      width: 30%;
+      right: 0;
+			margin-left: 0;
+      height: auto;
+    }
+  }
+
+  &__image {
+    width: 130%;
+    height: auto;
+    object-fit: cover;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 100%;
+			height: auto;
+      object-fit: contain;
+    }
+  }
+}
