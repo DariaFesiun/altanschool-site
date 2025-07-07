@@ -1,4 +1,4 @@
-@import '../../styles/base/variables';
+@use '../../styles/base/variables' as *;
 
 .header {
   padding: 29px 32px;

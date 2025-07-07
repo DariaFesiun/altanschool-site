@@ -1,4 +1,4 @@
-@import '../../styles/base/variables';
+@use '../../styles/base/variables' as *;
 
 .follow {
   background: linear-gradient(to bottom, #F1F1F1 70%, #DBDBDB 30%);
