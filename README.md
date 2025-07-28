@@ -4,7 +4,11 @@
 
 ## 🔗 Демо
 
+<<<<<<< HEAD
 [https://altanschool-site.vercel.app](https://altanschool-site.vercel.app/)
+=======
+[https://altanschool-site.vercel.app](https://altanschool-site.vercel.app)
+>>>>>>> feat: add n8n webhook to FollowUs form + minor fixes
 
 ## 📁 Структура проекту
 
