@@ -11,7 +11,7 @@ export const FollowUs = () => {
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  await fetch('https://daria07.app.n8n.cloud/webhook/form-submit', {
+  await fetch('https://primary-production-09564.up.railway.app/webhook/form-submit', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
